@@ -22,8 +22,6 @@ RUN apt-get update -qqy \
     libpython-dev \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
-RUN yarn global add npm
-
 RUN gem install dpl
 
 RUN pip install -U pip
